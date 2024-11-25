@@ -1,0 +1,919 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.25px;
+}
+
+.deepmind-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    
+}
+
+.header-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;  
+}
+
+.header-container video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.top-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 1rem 1rem 1rem;
+}
+
+.top-nav-left{
+    width: 100;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 3.5rem;
+    margin-left: 1rem;
+}
+
+.logo{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 0.3rem;
+}
+
+.google{
+    width: fit-content;
+    height: auto;
+}
+.google p{
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: white;
+}
+
+.dm{
+    width: fit-content;
+    height: auto;
+}
+
+.dm p{
+    font-size: 1.375rem;
+    font-weight: 100;
+    color: white;
+}
+
+.top-nav-middle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.top-nav-middle ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    column-gap: 2rem;
+}
+
+.top-nav-middle ul li{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.top-nav-middle ul li a{
+    text-decoration: none;
+    color: white
+}
+
+.top-nav-middle ul li i{
+    text-decoration: none;
+    color: white
+}
+
+.top-nav-right{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    column-gap: 2rem;
+    padding-right: 0.8rem;
+    color: white;
+}
+
+.search, .star{
+    width: fit-content;
+    height: auto;
+}
+
+.search i{
+    font-size: 1.2rem;
+}
+
+.star img{
+    color: white;
+}
+
+
+.background-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+    position: relative;
+    margin-top: 15rem;
+}
+
+video-title{
+    width: fit-content;
+    height: auto;
+}
+
+.video-title h1{
+    font-size: 7.75rem;
+    font-weight: 100;
+    color: white;
+}
+
+.video-action {
+    width: fit-content;
+    height: auto;
+}
+
+.video-action h3{
+    font-size: 1.75rem;
+    font-weight: 100;
+    color: white;
+}
+
+.video-button{
+    width: fit-content;
+    height: auto;
+}
+
+
+.video-button button{
+    padding: 1rem 1.7rem 1rem 1.7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.031rem;
+    border-radius: 3rem;
+    background-color: white;
+    border: none;
+    color: #1a73e8
+}
+
+.pause-play{
+    width: fit-content;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: aqua;
+}
+
+.pause-play i{
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    background-color: #202124
+    
+}
+
+.body-container{
+    width: 75%;
+    height: 100vh;
+
+}
+
+.news-section{
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+}
+
+.latest-news{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+    column-gap:1rem;
+    
+}
+
+.latest-news-text{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.viewall{
+    width: fit-content;
+    height: auto;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 3rem;
+}
+
+.researchcard{
+    width: 36%;
+    height: auto;
+    border-radius: 0.5rem;
+    
+}
+
+.researchcard a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: solid #bfc0c2;
+    cursor: pointer;
+}
+
+.card-header{
+    width: 100%;
+    height: auto;
+}
+
+.card-header img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+
+.card-body{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.card-body-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.card-body-top h3{
+    font-size: 0.688rem;
+    line-height: 1rem;
+
+}
+
+.card-body-top h4{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+
+.card-body-top h5{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+}
+
+.card-body-bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem 1.8rem 1.5rem; 
+}
+
+
+.deepmind-podcast-bg{
+    position: relative;
+    align-content: center;
+    margin-top: 4rem;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(238, 255, 0);
+    background-image: url(./GOOGLE\ PODCAST.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:6rem
+}
+
+.podcast-text{
+    width: 40%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+}
+
+.podcast-text h5{
+    color: white;
+    font-size: 0.688rem;
+    font-weight: 600;
+}
+
+.podcast-text h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.podcast-text h4{
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.tech-header{
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+.tech-header-text{
+    width: 75%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 2.3rem; 
+}
+
+.tech-header-text h1{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #202124;
+
+}
+
+.tech-header-text h3{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #5f6368;
+
+}
+
+.tech-button{
+    width: fit-content;
+    height: auto;
+    
+}
+
+.tech-button button{
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: #1a73e8;
+    font-size: 1rem;
+    font-weight: 550;
+    letter-spacing: 0.031rem;
+}
+
+.tech-button button:hover{
+    background-color: rgb(237, 241, 248);
+}
+
+.project-astra{
+    position: relative;
+    align-content: center;
+    margin-top: 4rem;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(238, 255, 0);
+    background-image: url(./astra.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap:10rem
+}
+
+.astra-text{
+    width: 60%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+}
+
+.astra-text h1{
+    color: white;
+    font-size: 5.25rem;
+    font-weight: 300;
+}
+
+.astra-text h4{
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.gemini-veo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 3rem;
+}
+
+.geminicard{
+    width: 46%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.geminicard a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: solid #bfc0c2;
+    cursor: pointer;
+}
+
+.gemini-header{
+    width: 100%;
+    height: auto;
+}
+
+.gemini-header img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+.gemini-body{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.gemini-body-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.gemini-body-top h4{
+    font-size: 1.25rem;
+    line-height: 1rem;
+}
+
+.gemini-body-top h5{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+
+.gemini-body-bottom{
+    width: 100%;
+    height: auto;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.gemini-body-bottom img{
+    width: fit-content;
+    height: auto;
+    text-align: right;
+    font-size: 1rem;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+
+.veocard{
+        width: 46%;
+        height: auto;
+        border-radius: 0.5rem;
+        margin-top: 1.5rem;
+}
+
+.veocard a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: solid #bfc0c2;
+    cursor: pointer;
+}
+
+.veo-body{
+    width: 100%;
+    height: auto;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.veo-body-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+veo-body-top h4{
+    font-size: 1.25rem;
+    line-height: 1rem;
+    color: black;
+
+}
+
+.veo-body-top h5{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+}
+
+.imagencard{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 6rem;
+}
+
+.explore-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5rem;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.exploretext{
+    width: 30%;
+    height: auto;
+}
+
+.googleai-column{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   row-gap: 1rem;
+   background-color: white;
+}
+
+.googleai{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 16rem;
+    border: solid #bfc0c2;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+
+}
+.googleai-logo-text{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+.googledeveloper{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+   row-gap: 1rem;
+}
+
+.footersection{
+    position: relative;
+    width: 100%; /* Full viewport width */
+    left: 50%; /* Move to the center */
+    transform: translateX(-50%); /* Offset half the body's width */
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.follow-container{
+    width: fit-content;
+    align-content: center;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1rem;
+    background-color: aqua;
+    padding: 2rem 2rem 2rem 0rem;
+    margin-left: 15rem;
+}
+
+.about{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 2rem;
+    background-color: rgb(208, 69, 173);
+    margin-left: 15rem;
+
+}
+
+.about-container{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    background-color: rgb(224, 245, 69);
+    margin-top: 4rem;
+}
+
+.about-header{
+    width: fit-content;
+    height: auto;
+}
+
+.about-header h4{
+    font-weight: 600;
+    color: #202124;
+    font-size: 1rem;
+}
+
+.about-container a{
+    font-weight: 500;
+    color: #202124;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.learn-more{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    background-color: rgb(243, 170, 67);
+
+}
+
+.learn-more-heading{
+    width: fit-content;
+    height: auto;
+}
+
+.learn-more-heading h4{
+    font-weight: 600;
+    color: #202124;
+    font-size: 1rem;
+}
+
+.learn-more a{
+    font-weight: 500;
+    color: #202124;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.sign-up{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1.5rem;
+    background-color: aquamarine;
+    margin-top: 3.7rem;
+
+}
+
+.sign-up-header{
+    width: fit-content;
+    height: auto;
+}
+
+.sign-up-header h4{
+    font-weight: 600;
+    color: #202124;
+    font-size: 1rem;
+}
+
+.sign-up form{
+    width: fit-content;
+    height: auto;
+}
+
+.sign-up form email-signup-form{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-up form email-signup-form signup-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.terms{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.main-terms{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+.main-terms p{
+    color: #202124;
+}
+
+.privacy-policy{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+.sign-up-button{
+    width: fit-content;
+    height: auto;
+}
+
+.sign-up-button button{
+    width: fit-content;
+    height: auto;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 2rem;
+    margin-top: 6rem;
+    margin-left: 15rem;
+    margin-bottom: 4rem;
+}
+
+.footer a{
+    font-weight: 500;
+    color: #202124;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.google-footer{
+    width: fit-content;
+    height: auto;
+}
+

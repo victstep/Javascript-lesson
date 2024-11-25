@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -0.031rem;
+}
+
+.main-container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row
+  
+}
+
+.box-1{
+    width: 25%;
+    height: auto;
+    border: solid #555;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.9rem;
+    
+}
+
+.revenue-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.revenue{
+    width: fit-content;
+    height: auto;
+}
+
+.revenue p {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.percentage{
+    width: fit-content;
+    height: auto;
+}
+
+.percentage p{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.price-container{
+    width: fit-content;
+    height: auto;
+}
+
+.price-container h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: black;
+}
+
+.box-2{
+    width: 25%;
+    height: auto;
+    border-top: solid #555;
+    border-right: solid #555;
+    border-bottom: solid #555;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.9rem;
+    
+}
+
+.overdue-invoices-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.overdue-invoices{
+    width: fit-content;
+    height: auto;
+}
+
+.overdue-invoices p {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.percentage-1{
+    width: fit-content;
+    height: auto;
+}
+
+.percentage-1 p{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: crimson;
+}
+
+.price-container-1{
+    width: 100%;
+    height: auto;
+}
+
+.price-container-1 h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: black;
+}
+
+.box-3{
+    width: 25%;
+    height: auto;
+    border-top: solid #555;
+    border-right: solid #555;
+    border-bottom: solid #555;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.9rem;
+    
+}
+
+.outstanding-invoices-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.outstanding-invoices{
+    width: fit-content;
+    height: auto;
+}
+
+.outstanding-invoices p {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.percentage-2{
+    width: fit-content;
+    height: auto;
+}
+
+.percentage-2 p{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.price-container-2{
+    width: 100%;
+    height: auto;
+}
+
+.price-container-2 h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: black;
+}
+
+.box-4{
+    width: 25%;
+    height: auto;
+    border-top: solid #555;
+    border-right: solid #555;
+    border-bottom: solid #555;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.9rem;
+    
+}
+
+.expenses-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.expenses{
+    width: fit-content;
+    height: auto;
+}
+
+.expenses p {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #555;
+}
+
+.percentage-3{
+    width: fit-content;
+    height: auto;
+}
+
+.percentage-3 p{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: crimson;
+}
+
+.price-container-3{
+    width: 100%;
+    height: auto;
+}
+
+.price-container-3 h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: black;
+}
+
+.main-container-2{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+    
+
+.grey-container{
+    width: 100%;
+    height: auto;
+    border: solid #cfcfcf;
+    border-radius: 0.5rem;
+    background-color: rgb(245, 245, 245);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.thir-days{
+    width: fit-content;
+    height: auto;
+}
+
+.thir-days p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.subscribers-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.total-subscribers-container{
+    width: 33%;
+    height: auto;
+    border: solid #cfcfcf;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.4rem;
+
+}
+
+.total-subscribers{
+    width: fit-content;
+    height: auto;
+
+}
+
+.total-subscribers p{
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: darkgray;
+}
+
+.count{
+    width: fit-content;
+    height: auto;
+}
+
+.count h1{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.open-rate-container{
+    width: 33%;
+    height: auto;
+    border: solid #cfcfcf;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.4rem;
+
+}
+
+.open-rate{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.open-rate p{
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: darkgray;
+}
+
+.count-1{
+    width: fit-content;
+    height: auto;
+}
+
+.count-1 h1{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.click-rate-container{
+    width: 33%;
+    height: auto;
+    border: solid #cfcfcf;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.4rem;
+
+}
+
+.click-rate{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.click-rate p{
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: darkgray;
+}
+
+.count-2{
+    width: fit-content;
+    height: auto;
+}
+
+.count-2 h1{
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.main-container-3{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: white
+}
+.grey-container-2{
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    border: solid #cfcfcf;
+    border-radius: 0.5rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.grey-lastdays{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.grey-lastdays p{
+    width: auto;
+    font-weight: 800;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.total-subscribers-container-2{
+    width: 33%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: solid #bab9b9;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;  
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.total-sub{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  
+}
+
+.total-sub p{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.sub-count{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+
+}
+
+.sub-count h1{
+    color: royalblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.from{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.from p{
+    color: #767575;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.perc{
+    width: fit-content;
+    height: auto;
+    background-color: rgb(158, 246, 182);
+    border: solid rgb(158, 246, 182);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    
+}
+
+.perc i{
+    color: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.perc p{
+    color: green;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: left;
+    
+}
+
+    
+.avg-openrate2-container{
+    width: 33%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-top: solid #bab9b9; 
+    border-right: solid #bab9b9; 
+    border-bottom: solid #bab9b9; 
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 1rem;
+    
+}
+
+.avg-openrate2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.avg-openrate2 p{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.rate-figure{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+.rate-figure h1{
+    color: royalblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.from-2{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.from-2 p{
+    color: #767575;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.perc-2{
+    width: 40%;
+    height: auto;
+    background-color: rgb(158, 246, 182);
+    border: solid rgb(158, 246, 182);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.perc-2 p{
+    color: green;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.avg-clickrate2-container{
+    width: 33%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-top: solid #bab9b9; 
+    border-right: solid #bab9b9; 
+    border-bottom: solid #bab9b9; 
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.avg-clickrate2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.avg-clickrate2 p{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.rate-figure-1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    column-gap: 0.5rem;
+    row-gap: 1rem;
+}
+
+.rate-figure-1 h1{
+    color: royalblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.from-3{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.from-3 p{
+    color: #767575;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.perc-3{
+    width: 40%;
+    height: auto;
+    background-color: rgb(247, 169, 148);
+    border: solid rgb(247, 169, 148);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.perc-3 p{
+    color: rgb(128, 26, 0);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
