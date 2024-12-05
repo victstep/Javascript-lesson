@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.25px;
@@ -11,17 +12,22 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    place-items: center;
-    
+    place-items: center; 
+
 }
+
 
 .header-container{
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-image: url(./veo-hero-supercut-tint-240512-r05.mp4);
     background-position: center;
-    background-size: cover;  
+    background-size: cover; 
 }
+
 
 .header-container video{
     position: absolute;
@@ -37,28 +43,36 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem 1rem 1rem 1rem;
+    margin-top: 0.5rem;
+ 
 }
 
 .top-nav-left{
+    position: absolute;
     width: 100;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    column-gap: 3.5rem;
-    margin-left: 1rem;
+    column-gap: 2rem;
+    
 }
 
 .logo{
-    width: fit-content;
+    width: 40%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
     column-gap: 0.3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.logo:hover{
+    background-color: #ebebeb09;
 }
 
 .google{
@@ -99,7 +113,6 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    column-gap: 2rem;
 }
 
 .top-nav-middle ul li{
@@ -110,6 +123,12 @@
     justify-content: center;
     align-items: center;
     column-gap: 0.5rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.top-nav-middle ul li:hover{
+    background-color: #ebebeb09;
 }
 
 .top-nav-middle ul li a{
@@ -129,24 +148,26 @@
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    column-gap: 2rem;
-    padding-right: 0.8rem;
-    color: white;
+    column-gap: 0.5rem;
+    padding-right: 1.5rem;
 }
 
-.search, .star{
+.top-nav-right a {
     width: fit-content;
     height: auto;
+    padding: 0.8rem;
+
 }
 
-.search i{
+.top-nav-right a:hover{
+    background-color: #ebebeb09;
+    cursor: pointer;
+}
+
+.top-nav-right i {
     font-size: 1.2rem;
-}
-
-.star img{
     color: white;
 }
-
 
 .background-text{
     width: 100%;
@@ -163,6 +184,8 @@
 video-title{
     width: fit-content;
     height: auto;
+    text-align: center;
+    
 }
 
 .video-title h1{
@@ -180,6 +203,7 @@ video-title{
     font-size: 1.75rem;
     font-weight: 100;
     color: white;
+    text-align: center;
 }
 
 .video-button{
@@ -190,6 +214,7 @@ video-title{
 
 .video-button button{
     padding: 1rem 1.7rem 1rem 1.7rem;
+    margin-bottom: 4rem;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -202,12 +227,11 @@ video-title{
 
 .pause-play{
     width: fit-content;
-    height: auto;
+    height: fit-content;
     cursor: pointer;
     position: absolute;
     bottom: 2rem;
     right: 2rem;
-    background-color: aqua;
 }
 
 .pause-play i{
@@ -224,8 +248,16 @@ video-title{
 .body-container{
     width: 75%;
     height: 100vh;
+    margin: 0 auto; /* Centers the content horizontally */
+    flex: 1; /* Ensures it takes up the available vertical space */
+}
+
+/* Medium version */
+@media screen and (max-width:1120px){ 
 
 }
+
+
 
 .news-section{
     width: 100%;
@@ -262,9 +294,35 @@ video-title{
     row-gap: 1rem;
 }
 
+.latest-news-text h1{
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #202124;
+}
+
+.latest-news-text p{
+    font-size: 1.25rem;
+    color: #5f6368;
+}
+
 .viewall{
     width: fit-content;
     height: auto;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 10000000rem;
+    cursor: pointer;   
+}
+
+.viewall p{
+    font-size: 1rem;
+    color: #1a73e8;
+    font-weight: 500;
+    letter-spacing: 0.031rem;
+    
+}
+
+.viewall:hover{
+    background-color: rgb(237, 241, 248);
 }
 
 .card{
@@ -272,40 +330,47 @@ video-title{
     height: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 4rem;
     padding-left: 0rem;
     padding-right: 0rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
+    
 }
 
 .researchcard{
-    width: 36%;
+    width: 33%;
     height: auto;
     border-radius: 0.5rem;
-    
 }
 
 .researchcard a{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     text-decoration: none;
     border-radius: 0.5rem;
-    border: solid #bfc0c2;
+    border: 0.05rem solid #bfc0c2;
     cursor: pointer;
+    text-decoration: none;
+    color: #5f6368;
+    
+}
+
+.researchcard a:hover{
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.143);
 }
 
 .card-header{
     width: 100%;
-    height: auto;
+    height: 50%;
 }
 
 .card-header img{
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
@@ -313,6 +378,8 @@ video-title{
     width: 100%;
     height: auto;
     padding: 1rem 1.5rem 1.5rem 1.5rem;
+    text-wrap: wrap;
+    overflow: hidden;
 }
 
 .card-body-top{
@@ -323,18 +390,22 @@ video-title{
     justify-content: start;
     align-items: start;
     row-gap: 1rem;
+    padding: auto;
+    text-wrap: wrap;
+    overflow: hidden;
 }
 
 .card-body-top h3{
     font-size: 0.688rem;
     line-height: 1rem;
+   
 
 }
 
 .card-body-top h4{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.4rem;
     font-weight: 300;
+    color: #202124;
 }
 
 .card-body-top h5{
@@ -350,31 +421,44 @@ video-title{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1.5rem 1.8rem 1.5rem; 
+    padding: 0.5rem 1.5rem 1.8rem 1.5rem;
+    
 }
 
+.card-body-bottomtext{
+    font-size: 0.9rem;
+    line-height: 1rem;
+    letter-spacing: 0.032rem;
+    color: #5f6368;
+}
+
+.card-bottom-icon i{
+    font-size: 1.2rem;
+    color: #1a73e8;
+}
 
 .deepmind-podcast-bg{
     position: relative;
     align-content: center;
     margin-top: 4rem;
     width: 100%;
-    height: 70%;
+    height: auto;
     background-color: rgb(238, 255, 0);
     background-image: url(./GOOGLE\ PODCAST.png);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap:6rem
+    row-gap:13rem
 }
 
+
 .podcast-text{
-    width: 40%;
+    width: 50%;
     height: auto;
     text-align: center;
     display: flex;
@@ -382,11 +466,12 @@ video-title{
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
-    margin-top: 10rem;
+    margin-top: 16rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    padding: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
+
 
 .podcast-text h5{
     color: white;
@@ -409,12 +494,11 @@ video-title{
 .tech-header{
     width: 100%;
     height: auto;
-    margin-top: 8rem;
+    margin-top: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 1rem;
     padding-bottom: 1rem;
     
 }
@@ -438,7 +522,7 @@ video-title{
 
 .tech-header-text h3{
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 100;
     color: #5f6368;
 
 }
@@ -514,18 +598,20 @@ video-title{
     width: 100%;
     height: auto;
     display: flex;
+    margin-top: 1rem;
     flex-direction: row;
-    column-gap: 7rem;
+    column-gap: 4.5rem;
     padding-left: 0rem;
     padding-right: 0rem;
     padding-top: 3rem;
 }
 
 .geminicard{
-    width: 46%;
+    width: 50%;
     height: auto;
     border-radius: 0.5rem;
     margin-top: 1.5rem;
+    
 }
 
 .geminicard a{
@@ -537,8 +623,14 @@ video-title{
     align-items: start;
     text-decoration: none;
     border-radius: 0.5rem;
-    border: solid #bfc0c2;
+    border: 0.05rem solid #bfc0c2;
     cursor: pointer;
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.geminicard a:hover{
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.143);
 }
 
 .gemini-header{
@@ -554,7 +646,7 @@ video-title{
 .gemini-body{
     width: 100%;
     height: auto;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 
 .gemini-body-top{
@@ -569,13 +661,14 @@ video-title{
 
 .gemini-body-top h4{
     font-size: 1.25rem;
-    line-height: 1rem;
+    font-weight: 300;
+    color: #202124;
 }
 
 .gemini-body-top h5{
     font-size: 1rem;
-    line-height: 1.75rem;
     font-weight: 300;
+    color: #5f6368;
 }
 
 .gemini-body-bottom{
@@ -585,20 +678,21 @@ video-title{
     font-size: 1rem;
 }
 
-.gemini-body-bottom img{
+.gemini-body-bottom i{
     width: fit-content;
     height: auto;
     text-align: right;
-    font-size: 1rem;
-    margin: 1rem;
-    margin-right: 2rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: #1a73e8;
 }
 
 .veocard{
-        width: 46%;
+        width: 50%;
         height: auto;
         border-radius: 0.5rem;
         margin-top: 1.5rem;
+    
 }
 
 .veocard a{
@@ -610,14 +704,19 @@ video-title{
     align-items: start;
     text-decoration: none;
     border-radius: 0.5rem;
-    border: solid #bfc0c2;
+    border: 0.05rem solid #bfc0c2;
     cursor: pointer;
+    color: #5f6368;
+}
+
+.veocard a:hover{
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.143);
 }
 
 .veo-body{
     width: 100%;
     height: auto;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 
 .veo-body-top{
@@ -630,17 +729,17 @@ video-title{
     row-gap: 1rem;
 }
 
-veo-body-top h4{
+.veo-body-top h4{
     font-size: 1.25rem;
-    line-height: 1rem;
-    color: black;
+    font-weight: 300;
+    color: #202124;
 
 }
 
 .veo-body-top h5{
     font-size: 1rem;
-    line-height: 1.75rem;
     font-weight: 300;
+    color: #5f6368;
 }
 
 .imagencard{
@@ -648,10 +747,110 @@ veo-body-top h4{
     height: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 4rem;
+    column-gap: 4.5rem;
     padding-left: 0rem;
     padding-right: 0rem;
-    padding-top: 6rem;
+    margin-top: 5rem; 
+    overflow: hidden;
+}
+
+
+.imagen-card{
+    width: 30%;
+    height: auto;
+    border-radius: 0.6rem;
+}
+
+.imagen-card a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 0.4rem;
+    border: 0.08rem solid #bfc0c2;
+    cursor: pointer;
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.imagen-card a:hover{
+    box-shadow: 0 0.125rem 0.4rem rgba(0, 0, 0, 0.143);
+}
+
+
+
+.imagencard-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.imagen-body-top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+    text-wrap: wrap;
+    overflow: hidden;
+}
+
+.imagen-body-bottom{
+    width: fit-content;
+    height: auto;
+    text-align: right;
+    padding: 1rem;
+    margin-left: 20rem;
+    color: #1a73e8;
+}
+
+.imagen-body-bottom i{
+   font-size: 1.2rem;
+}
+
+.responsibility{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    row-gap: 2rem;
+
+}
+
+.responsibility-header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.responsibility-header h1{
+    font-size: 3rem;
+    color: #202124;
+    font-weight: 300;
+}
+
+.responsibility-header-text{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.responsibility-header-text h3{
+    font-size: 1.75rem;
+    color: #5f6368;
+    font-weight: 100;
 }
 
 .explore-section{
@@ -660,87 +859,168 @@ veo-body-top h4{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;
-    column-gap: 5rem;
+    align-items: start;
+    column-gap: 2rem;
     margin-top: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
+    
 }
 
 .exploretext{
-    width: 30%;
-    height: auto;
+    width: 37%;
+    height: auto; 
+   
+}
+
+.exploretext h3{
+    font-size: 2.5rem;
+    color: #202124;
+    font-weight: 100;
 }
 
 .googleai-column{
-    width: 30%;
+    width: 63%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 2rem;
+}
+
+.googleai{
+    width:50%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-   row-gap: 1rem;
-   background-color: white;
+    row-gap: 0.5rem;
+ 
 }
 
-.googleai{
+.googleai a{
     width:100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    column-gap: 16rem;
-    border: solid #bfc0c2;
-    border-radius: 0.5rem;
-    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
-
+    text-decoration: none;
 }
+
 .googleai-logo-text{
-    width: fit-content;
+    width: 100%;
     height: auto;
     display: flex;
     flex: row;
     justify-content: start;
     align-items: center;
-    column-gap: 0.8rem;
+    column-gap: 3rem;
+    border: 0.05rem solid #bfc0c2;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+    cursor: pointer;
+    color: #5f6368;
 }
+
+.googleai-logo-text:hover{
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.143);
+}
+
+.ailogo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.8rem;
+    margin-left: 0.8rem;
+}
+
+.ailogo p{
+    font-size: 1.1rem;
+    color: #202124;
+}
+
+.arrow{
+    width: fit-content;
+    height: auto;
+    color: #1a73e8;
+}
+
+.arrow i{
+    width: fit-content;
+    height: auto;
+    margin-right: 1rem;
+    color: #1a73e8;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 .googledeveloper{
-    width: 30%;
+    width:50%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-   row-gap: 1rem;
+    row-gap: 1rem;
 }
 
 .footersection{
-    position: relative;
-    width: 100%; /* Full viewport width */
-    left: 50%; /* Move to the center */
-    transform: translateX(-50%); /* Offset half the body's width */
-    background-color: #f8f9fa;
-    color: black;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+  width: 100%; /* Makes the footer span the full width */
+  height: auto;
+  background-color: #f8f9fa;
+  text-align: center;
 }
+
 .follow-container{
-    width: fit-content;
-    align-content: center;
+    width: 75%;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
+    align-content: end;
     column-gap: 1rem;
-    background-color: aqua;
-    padding: 2rem 2rem 2rem 0rem;
+    padding: 1rem 1rem 1rem 0rem;
     margin-left: 15rem;
+    font-size: 1.1rem;
+    border-bottom: 0.063rem solid #bfc0c2;
+    
 }
+
+.follow-us{
+    width: fit-content;
+    height: auto;
+    text-align: end;
+    padding-top: 0.6rem;
+}
+
+.follow-logos{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    padding-right: 4rem;
+    padding-left: 0.5rem;
+
+
+}
+
+.follow-container a{
+    width: fit-content;
+    height: auto;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+}
+
+.follow-container a:hover{
+    background-color: #bfc0c2;
+    border-radius: 1000000000rem;
+}
+
 
 .about{
     width: 75%;
@@ -750,21 +1030,21 @@ veo-body-top h4{
     justify-content: start;
     align-items: center;
     column-gap: 2rem;
-    background-color: rgb(208, 69, 173);
     margin-left: 15rem;
-
+    color: #202124;
+    border-bottom: 0.063rem solid #bfc0c2;
+    padding-bottom: 2rem;
 }
 
 .about-container{
-    width: 33%;
+    width: 36%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 1rem;
-    background-color: rgb(224, 245, 69);
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 .about-header{
@@ -786,14 +1066,14 @@ veo-body-top h4{
 }
 
 .learn-more{
-    width: 33%;
+    width: 32%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 1rem;
-    background-color: rgb(243, 170, 67);
+    margin-left: 2rem;
 
 }
 
@@ -816,14 +1096,13 @@ veo-body-top h4{
 }
 
 .sign-up{
-    width: 33%;
+    width: 32%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 1.5rem;
-    background-color: aquamarine;
     margin-top: 3.7rem;
 
 }
@@ -839,9 +1118,30 @@ veo-body-top h4{
     font-size: 1rem;
 }
 
+
 .sign-up form{
     width: fit-content;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.sign-up form input{
+    padding:1rem 1rem 1rem 3rem;
+    width: 25rem;
+    border: 0.03 solid #bfc0c2
+}
+
+.sign-up form input:focus{
+    border: 0.063 solid rgb(0, 0, 95);
+
+}
+
+.sign-up-form input:hover{
+    background-color: #eeeeee;
 }
 
 .sign-up form email-signup-form{
@@ -850,9 +1150,12 @@ veo-body-top h4{
   align-items: center;
 }
 
-.sign-up form email-signup-form signup-wrapper{
-    position: relative;
-    width: 100%;
+
+.email-logo{
+    width: fit-content;
+    height: auto;
+    font-size: 1.2rem;
+    color: #5f6368;
 }
 
 .terms{
@@ -871,7 +1174,9 @@ veo-body-top h4{
 }
 
 .main-terms p{
-    color: #202124;
+    color: #5f6368;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
 }
 
 .privacy-policy{
@@ -880,16 +1185,31 @@ veo-body-top h4{
     text-align: left;
 }
 
+.privacy-policy a{
+    color: #5f6368;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
 .sign-up-button{
     width: fit-content;
     height: auto;
+    border-radius: 3rem;
+    padding: 1rem 1.6rem 1rem 1.6rem;
+    cursor: pointer;
+    border: 0.05rem solid rgb(0, 0, 95);
+    background-color: white
 }
 
-.sign-up-button button{
-    width: fit-content;
-    height: auto;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    border-radius: 2rem;
+.sign-up-button p{
+    font-weight: 500;
+    color: #1a73e8;
+}
+
+.sign-up-button:hover{
+    border-color: #1a73e8;
+    background-color: rgb(238, 241, 248);
+    
 }
 
 .footer{
@@ -898,11 +1218,13 @@ veo-body-top h4{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: start;
-    column-gap: 2rem;
-    margin-top: 6rem;
+    align-items: center;
+    column-gap: 3rem;
+    margin-top: 3rem;
     margin-left: 15rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
 }
 
 .footer a{
@@ -915,5 +1237,11 @@ veo-body-top h4{
 .google-footer{
     width: fit-content;
     height: auto;
+}
+
+.google-footer h4{
+    font-size: 1.4rem;
+    font-weight: 200;
+    letter-spacing: 0.006rem;
 }
 
