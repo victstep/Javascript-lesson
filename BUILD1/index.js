@@ -58,9 +58,6 @@ console.log(final)
 let start = 10 >= 20
 console.log(start)
 
-let show = prompt("Enter Your Age : Don't Lie")
-show = Number(show)
-
 let totalPrice = 1000
 let yourName = "Lindsay"
 
@@ -103,4 +100,16 @@ if(cardAmount > minBalance){
     console.log("You are allowed to shop")
 } else{
     console.log("Card balance is low!!!")
+}
+
+let studentGrade = 90
+let minimumScholarshipScore = 85
+let grantScore = 70
+
+if(studentGrade > minimumScholarshipScore){
+    alert("Congratulations! You have qualified for the Scholarship!")
+} else if(studentGrade > grantScore){
+    alert("You qualify for a Grant")
+} else {
+    alert ("Try again next time")
 }
